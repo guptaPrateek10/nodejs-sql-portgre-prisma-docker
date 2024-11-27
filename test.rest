@@ -15,27 +15,27 @@ POST http://localhost:5003/auth/login
 Content-Type: application/json
 
 {
-    "username": "guptaprateek10@gmail.com",
+    "username": "abc@gmail.com",
     "password": "Atmecs@123"
 }
 
 ### Fetch all todos GET /TODOS (protected)
 GET http://localhost:5003/todos
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzMyNjIxNDc4LCJleHAiOjE3MzI3MDc4Nzh9.y31PlmEkGmV9FYMi0aV1JiCl11r3h0pXqRzhVLWQRbY
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzMyNzM2ODU0LCJleHAiOjE3MzI4MjMyNTR9.h4XWIoz7-hao_GKaWRIZ-iuZwoYF3gb27_mWoAJzL2M
 
 
 ### Creates a new todo POST /TODOS (protected)
 POST http://localhost:5003/todos
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzMyNjIxNDc4LCJleHAiOjE3MzI3MDc4Nzh9.y31PlmEkGmV9FYMi0aV1JiCl11r3h0pXqRzhVLWQRbY
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzMyNzM2ODU0LCJleHAiOjE3MzI4MjMyNTR9.h4XWIoz7-hao_GKaWRIZ-iuZwoYF3gb27_mWoAJzL2M
 Content-Type: application/json 
 
 {
-    "task": "Finish coding the projects 4!!!!"
+    "task": "Finish coding the projects 2!!!!"
 }
 
 ### Update a todo PUT /TODOS/:ID (protected)
-PUT http://localhost:5003/todos/2?page=4
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzMyNjIxNDc4LCJleHAiOjE3MzI3MDc4Nzh9.y31PlmEkGmV9FYMi0aV1JiCl11r3h0pXqRzhVLWQRbY
+PUT http://localhost:5003/todos/3?page=4
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzMyNzM2ODU0LCJleHAiOjE3MzI4MjMyNTR9.h4XWIoz7-hao_GKaWRIZ-iuZwoYF3gb27_mWoAJzL2M
 Content-Type: application/json
 
 {
@@ -44,4 +44,4 @@ Content-Type: application/json
 
 ### Delete a todo DELETE /TODOS/:ID (protected)
 DELETE http://localhost:5003/todos/3
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzMyNjIxNDc4LCJleHAiOjE3MzI3MDc4Nzh9.y31PlmEkGmV9FYMi0aV1JiCl11r3h0pXqRzhVLWQRbY
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzMyNzM2ODU0LCJleHAiOjE3MzI4MjMyNTR9.h4XWIoz7-hao_GKaWRIZ-iuZwoYF3gb27_mWoAJzL2M

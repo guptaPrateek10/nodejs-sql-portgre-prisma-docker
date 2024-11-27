@@ -1,0 +1,21 @@
+{
+  "name": "nodejs-postgresql-prisma-docker",
+  "version": "1.0.0",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node --watch  --env-file=.env --experimental-strip-types --experimental-sqlite ./src/server.js",
+    "docker-build": "docker build -t nodejs-postgresql-prisma-docker.",
+    "docker-run": "docker run -p 5001:5001 nodejs-postgresql-prisma-docker"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "Full-stack todo app uses node js backed , a Sqlized database and jwt authentication support",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express": "^4.21.1",
+    "jsonwebtoken": "^9.0.2"
+  }
+}
